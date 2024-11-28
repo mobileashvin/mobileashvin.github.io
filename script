@@ -1,1 +1,12 @@
-
+<div id="embeddingContainer"></div>
+<script src="https://quicksight.aws.amazon.com/embed"></script>
+<script>
+    const options = {
+        url: "https://us-east-1.quicksight.aws.amazon.com/sn/embed-url",
+        container: document.getElementById('embeddingContainer'),
+        parameters: { ... }, // Add any custom parameters
+        height: "800px",
+        width: "100%"
+    };
+    QuickSightEmbed.embedDashboard(options);
+</script>
